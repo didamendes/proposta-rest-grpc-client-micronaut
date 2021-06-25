@@ -1,0 +1,13 @@
+micronaut:
+  application:
+    name: propostaRest
+
+grpc:
+  client:
+    plaintext: true
+    max-retry-attempts: 10
+  channels:
+    proposta:
+      address: 'localhost:50051'
+      plaintext: true
+      max-retry-attempts: 10
